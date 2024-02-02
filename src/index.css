@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #d3bef390;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  text-align: center;
+  margin: auto;
+}
+
+.numberWrapper{
+  border: 5px solid black;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.userNum{
+  width: 60px;
+  background: buttonface;
+  border: 1px solid lightgrey;
+  
+}
+
+.border_box{
+  border: 5px solid black;
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.shadow{
+  box-shadow: 0px 0px 57px 26px rgba(99,75,75,0.61);
+-webkit-box-shadow: 0px 0px 57px 26px rgba(99,75,75,0.61);
+-moz-box-shadow: 0px 0px 57px 26px rgba(99,75,75,0.61);
+ 
+background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
+}
+
