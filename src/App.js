@@ -4,11 +4,16 @@ import "./index.css";
 import { useState } from "react";
 import Problem1 from "./Problem1.js";
 import Problem2 from "./Problem2.js";
-import Problem3 from "./Problem3.js";
+import {
+  Primenumber,
+  Leapyear,
+  CalculateBMI,
+  Ageband,
+  Guessnumber,
+} from "./Problem3.js";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
-
-
-function App() {
+function Counter() {
   let [count, setcount] = useState(0);
 
   const handleIncrement = () => {
@@ -34,12 +39,36 @@ function App() {
           <button onClick={handleIncrement}>+</button>
         </div>
       </div>
-      <Problem1></Problem1>
-      <Problem2></Problem2>
-      <Problem3></Problem3>
-     
-      
     </div>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <nav className="linkWrapper">
+          <Link to={"counter"} className="stylelink">Counter</Link>
+          <Link to={"multiplier"} className="stylelink">Multiplier</Link>
+          <Link to={"pallindrome"} className="stylelink">Check Pallindrome </Link>
+          <Link to={"primenumber"} className="stylelink">Check PrimeNumber</Link>
+          <Link to={"leapyear"} className="stylelink">Check LeapYear </Link>
+          <Link to={"bmi"} className="stylelink">Calculate BMI</Link>
+          <Link to={"ageband"} className="stylelink">Check AgeBand</Link>
+          <Link to={"guessnumber"} className="stylelink">Guess Number</Link>
+        </nav>
+        <Routes>
+          <Route path="counter" element={<Counter />} />
+          <Route path="multiplier" element={<Problem1 />} />
+          <Route path="pallindrome" element={<Problem2 />} />
+          <Route path="primenumber" element={<Primenumber />} />
+          <Route path="leapyear" element={<Leapyear />} />
+          <Route path="bmi" element={<CalculateBMI />} />
+          <Route path="ageband" element={<Ageband />} />
+          <Route path="guessnumber" element={<Guessnumber />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

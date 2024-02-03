@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #d3bef390;
 
+
 }
 
 code {
@@ -49,11 +50,26 @@ code {
 }
 
 .shadow{
-  box-shadow: 0px 0px 57px 26px rgba(99,75,75,0.61);
--webkit-box-shadow: 0px 0px 57px 26px rgba(99,75,75,0.61);
--moz-box-shadow: 0px 0px 57px 26px rgba(99,75,75,0.61);
+  box-shadow: 0px 0px 57px 26px rgba(198, 169, 169, 0.61);
+-webkit-box-shadow: 0px 0px 57px 26px rgba(207, 177, 177, 0.61);
+-moz-box-shadow: 0px 0px 57px 26px rgba(192, 154, 154, 0.61);
+
  
-background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+background-image: linear-gradient(-20deg, #a783dc 0%, #e9defa 100%);
 
 }
 
+.linkWrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+  padding: 10px;
+  background-color: #e4d2fd;
+  border: 1px solid #dec9ff ;
+}
+
+.stylelink{
+  color: black;
+  text-decoration: none;
+} 
